@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 ta.recycle();
                 GeoPoint start = new GeoPoint(points[0][0], points[0][1]);
                 mapController.setCenter(start);
+                mapController.setZoom(15);
                 int count = 0;
                 for (int i = 0; i < points.length; i++) {
                     count = getCount(points[i][5]);
